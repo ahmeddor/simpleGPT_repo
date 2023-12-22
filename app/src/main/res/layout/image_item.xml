@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+    >
+
+    <LinearLayout
+        android:layout_width="520px"
+        android:layout_height="520px"
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="#1D3461"
+        android:id="@+id/l_image_view"
+        android:padding="8dp"
+        android:layout_marginEnd="80dp"
+        >
+
+        <ImageView
+            android:id="@+id/l_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_send_24"
+            android:layout_gravity="center"
+
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="#C41E3A"
+        android:id="@+id/r_chatImage_view"
+        android:layout_alignParentEnd="true"
+        android:padding="12dp"
+        android:layout_marginStart="80dp"
+        >
+
+        <TextView
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/r_textImage_view"
+            android:textSize="18sp"
+            android:text="Bye world!"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".simpleDally">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="80dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_layout" />
+
+    <TextView
+        android:id="@+id/welcome_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="welcome to DALL-E \n Start Typing!"
+        android:textSize="25dp"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="-80dp"
+        android:layout_below="@+id/recycler_view"
+        app:layout_constraintTop_toBottomOf="@+id/recycler_view">
+
+
+        <EditText
+            android:id="@+id/message_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@+id/sendButton"
+            android:background="@drawable/rounded_corner"
+            android:hint="Write Here"
+            android:padding="16dp"
+            android:textColor="@color/black" />
+
+        <ImageButton
+            android:id="@+id/sendButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="10dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="8dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/baseline_send_24" />
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/homeBtn2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_home_24" />
+</RelativeLayout>

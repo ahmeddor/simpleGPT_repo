@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home">
+
+    <LinearLayout
+        android:id="@+id/appHolder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+
+        >
+
+        <ImageButton
+            android:id="@+id/chatGpt"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/baseline_manage_search_24" />
+
+        <ImageButton
+            android:id="@+id/dallyE"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:scaleType="fitCenter"
+            android:layout_width="170dp"
+            android:layout_marginStart="50dp"
+            android:layout_height="170dp"
+            app:srcCompat="@drawable/baseline_manage_search_24" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif-black"
+        android:text="Welcome to SimpleGpt"
+        android:textSize="50sp" />
+
+</RelativeLayout>
